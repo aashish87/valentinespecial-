@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <style>
+
+    /* Add your custom styles here */
+
+    body {
+
+      background-color: pink;
+
+      text-align: center;
+
+      font-family: Arial, sans-serif;
+
+    }
+
+    .container {
+
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      margin-top: 100px;
+
+    }
+
+    h1 {
+
+      font-size: 72px;
+
+      color: white;
+
+      margin-bottom: 50px;
+
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+    }
+
+    p {
+
+      font-size: 24px;
+
+      color: white;
+
+      margin-bottom: 50px;
+
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+    }
+
+    .button {
+
+      background-color: white;
+
+      color: pink;
+
+      border: none;
+
+      border-radius: 25px;
+
+      padding: 20px 40px;
+
+      font-size: 24px;
+
+      cursor: pointer;
+
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+    }
+
+    .button:hover {
+
+      background-color: pink;
+
+      color: white;
+
+    }
+
+    /* Responsive design */
+
+    @media (max-width: 700px) {
+
+      h1 {
+
+        font-size: 48px;
+
+      }
+
+      p {
+
+        font-size: 18px;
+
+      }
+
+      .button {
+
+        padding: 10px 20px;
+
+        font-size: 18px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Happy Proposal Day, Pretti!</h1>
+
+    <p>I can't imagine spending the rest of my life without you. Will you be mine forever?</p>
+
+    <img src="image.jpg" alt="Love">
+
+    <button class="button">Absolutely!</button>
+
+  </div>
+
+  <!-- Additional surprise -->
+
+  <div style="display: none;">
+
+    <audio id="surprise-sound" src="surprise.mp3"></audio>
+
+    <script>
+
+      document.querySelector(".button").addEventListener("click", function() {
+
+        var sound = document.getElementById("surprise-sound");
+
+        sound.currentTime = 0;
+
+        sound.play();
+
+      });
+
+    </script>
+
+  </div>
+
+</body>
+
+</html>
+
